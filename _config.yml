@@ -1,16 +1,17 @@
 # Site settings
-title: JuanRoa.me
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
+title: Juan Roa
+description: 'Pensamientos, experiencias, ideas y algo de código'
 url: 'http://juanroa.me'
 baseurl: '/'
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: 'UA-72523770-1'
+language: 'es'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Juan Roa'
+  email: jdroa92@gmail.com
+  twitter_username: jroadev
+  github_username:  roadev
+  linkedin_username:  roadev
 
 # Build settings
 destination: _site

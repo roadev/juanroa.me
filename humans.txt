@@ -1,14 +1,14 @@
 /* TEAM */
 Developer & Designer: Josh Gerdes
-Twitter: @joshgerdes
-Site: http://joshgerdes.com
-Location: Minneapolis, MN, USA
-						
+Twitter: @jroadev
+Site: http://juanroa.me
+Location: Cali, VAC, Colombia
+
 /* THANKS */
 Name: Dale Anthony
 
 /* SITE */
-Last update: 2015/02/23
+Last update: 2016/01/18
 Standards: HTML5, CSS3
 Components: Jekyll
-Software: Sublime Text, Photoshop
+Software: Atom Editor
