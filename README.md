@@ -1,6 +1,6 @@
-# jekyll-uno
+# JuanRoa.me website source code
 
-Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
+Based on Jekyll-Uno theme - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost, credits to [joshgerdes](https://github.com/joshgerdes) for adapting this theme to Jekyll.
 
 > :warning:
   This theme requires ruby and rubygems installed
@@ -15,7 +15,7 @@ Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://g
 
 ---
 
-### Start in 4 steps
+### Start in 4 steps (default theme from [joshgerdes'](https://github.com/joshgerdes) repository)
 
 1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
 2. Enter the folder: `cd jekyll-uno/`
