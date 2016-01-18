@@ -1,8 +1,8 @@
 # Site settings
-title: Jekyll-Uno
+title: JuanRoa.me
 description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno' 
-baseurl: '/jekyll-uno/'
+url: 'http://juanroa.me'
+baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 
 author:
