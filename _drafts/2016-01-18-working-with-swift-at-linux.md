@@ -6,7 +6,7 @@ categories: programming language
 tags: [swift, swift2, linux, swift linux, apple]
 ---
 
-Maybe many of you didn't know that Apple has open-sourced its Swift 2 code under the MIT license the past december (2015).
+Maybe many of you didn't know that Apple has open-sourced its Swift 2 code (compiler and core-libraries too) under the MIT license the past december (2015).
 
 {% highlight ruby %}
 def show

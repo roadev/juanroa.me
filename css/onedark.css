@@ -9,6 +9,8 @@
   -webkit-font-smoothing: subpixel-antialiased;
   width: 100%; }
 
+.highlight pre {
+  background-color: #272822; }
 .highlight .c {
   color: #5B6370;
   font-style: italic; }

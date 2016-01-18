@@ -1,0 +1,150 @@
+//colors
+$color_mine_shaft_98_approx: rgba(51, 51, 51, 0.98);
+$white_15: rgba(255, 255, 255, 0.15);
+$color_storm_dust_approx: #666666;
+$color_cinderella_approx: #fae3df;
+$color_flame_pea_approx: #e25440;
+$color_thunderbird_approx: #b9301c;
+$color_mine_shaft_approx: #333333;
+$color_desert_storm_approx: #f8f8f8;
+$color_gallery_approx: #eeeeee;
+$color_solitude_approx: #e8f2fb;
+$color_tropical_blue_approx: #c9e1f6;
+$color_pumice_approx: #c7c7c7;
+$color_mountain_mist_approx: #999999;
+$white: #fff;
+$color_alto_approx: #dddddd;
+$color_nobel_approx: #b3b3b3;
+$color_shady_lady_approx: #a6a6a6;
+$black_30: rgba(0, 0, 0, 0.3);
+$color_celeste_approx: #cccccc;
+$color_tundora_60_approx: rgba(68, 68, 68, 0.6);
+$black_90: rgba(0, 0, 0, 0.9);
+$white_14: rgba(255, 255, 255, 0.14);
+$black_40: rgba(0, 0, 0, 0.4);
+$color_atoll_60_approx: rgba(21, 111, 120, 0.6);
+$color_swamp_80_approx: rgba(6, 31, 33, 0.8);
+$color_voodoo_60_approx: rgba(73, 50, 82, 0.6);
+$color_cinder_80_approx: rgba(17, 11, 19, 0.8);
+$color_moccaccino_60_approx: rgba(119, 31, 18, 0.6);
+$color_creole_80_approx: rgba(30, 8, 5, 0.8);
+$color_gun_powder_60_approx: rgba(61, 66, 96, 0.6);
+$color_mirage_80_approx: rgba(21, 23, 34, 0.8);
+$color_cornflower_blue_approx: #5ba4e5;
+$color_mariner_approx: #217fd2;
+$color_tapa_approx: #737373;
+$white_10: rgba(255, 255, 255, 0.1);
+
+//fonts
+$font_0: "foundation-icons";
+$font_1: "Raleway";
+$font_2: "sans-serif";
+$font_3: "Roboto Slab";
+$font_4: "serif";
+$font_5: "Roboto Slab";
+$font_6: "serif";
+$font_7: "Consolas";
+$font_8: "Menlo";
+$font_9: "Monaco";
+$font_10: "Lucida Console";
+$font_11: "Liberation Mono";
+$font_12: "DejaVu Sans Mono";
+$font_13: "Bitstream Vera Sans Mono";
+$font_14: "Courier New";
+$font_15: "monospace";
+$font_16: "serif";
+$font_17: "Consolas";
+$font_18: "Menlo";
+$font_19: "Monaco";
+$font_20: "Lucida Console";
+$font_21: "Liberation Mono";
+$font_22: "DejaVu Sans Mono";
+$font_23: "Bitstream Vera Sans Mono";
+$font_24: "Courier New";
+$font_25: "monospace";
+$font_26: "serif";
+$font_27: "Roboto Slab";
+$font_28: "serif";
+$font_29: "Roboto Slab";
+$font_30: "serif";
+$font_31: "entypo";
+$font_32: "entypo-social";
+
+//urls
+$url_0: url("../fonts/foundation-icons/foundation-icons.eot");
+$url_1: url("../fonts/foundation-icons/foundation-icons.eot?");
+$url_2: url("../fonts/foundation-icons/foundation-icons.woff");
+$url_3: url("../fonts/foundation-icons/foundation-icons.ttf");
+$url_4: url("../fonts/foundation-icons/foundation-icons.svg");
+$url_5: url("../images/background-cover.jpg");
+
+//@extend-elements
+//original selectors
+//html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+%extend_1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+//original selectors
+//h1, h2, h3, h4, h5, h5
+%extend_2 {
+	margin-top: .8em;
+	margin-bottom: .4em;
+	font-family: $font_3, $font_4;
+	font-weight: lighter;
+	color: $color_mine_shaft_approx;
+	-webkit-font-smoothing: antialiased;
+}
+
+//original selectors
+//.avatar, .logo
+%extend_3 {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	border: 3px solid $white;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 1px 1px $black_30;
+}
+
+//original selectors
+//.btn, .navigation__item a
+%extend_4 {
+	padding: 10px 20px;
+	border: 1px solid $color_flame_pea_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 20px;
+	font-size: .9em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: none;
+	color: $color_flame_pea_approx;
+	-webkit-font-smoothing: antialiased;
+}
+
+//original selectors
+//.btn-mobile-menu__icon, .btn-mobile-close__icon
+%extend_5 {
+	position: relative;
+	top: 3px;
+	font-size: 36px;
+	color: $white;
+}
+
+//original selectors
+//input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"]
+%extend_6 {
+	width: 240px;
+	padding: 1em;
+	background: $white;
+	border: 1px solid $color_alto_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	font-size: .9em;
+	color: $color_storm_dust_approx;
+}

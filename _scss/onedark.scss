@@ -1,7 +1,3 @@
-/**
-* Syntax highlighting styles
-*/
-
 .highlighttable,
 .post-content > .highlight {
   background: #282C34;
@@ -12,6 +8,10 @@
 }
 
 .highlight {
+
+  pre{
+    background-color: #272822;
+  }
 
   .c     { color: #5B6370; font-style: italic } // Comment
   .err   { color: #960050; background-color: #1e0010; } // Error
