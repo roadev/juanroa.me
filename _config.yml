@@ -5,6 +5,7 @@ url: 'http://juanroa.me'
 baseurl: '/'
 google_analytics: 'UA-72523770-1'
 language: 'es'
+disqus_shortname: 'juanroa'
 
 author:
   name: 'Juan Roa'
