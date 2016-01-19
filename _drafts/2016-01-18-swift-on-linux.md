@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Working with Swift 2 language at Linux"
+title:  "Swift 2 language on Linux"
 date:   2016-01-18 15:04:23
 categories: programming language
 tags: [swift, swift2, linux, swift linux, apple]
