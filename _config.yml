@@ -1,6 +1,6 @@
 # Site settings
 title: Juan Roa
-description: 'Web Developer (sometimes Full-stack dev)from Cali, Colombia. Ruby on Rails | SASS | PostgreSQL | Linux SysAdmin'
+description: 'Web Developer (sometimes Full-stack dev) from Cali, Colombia. Ruby on Rails | SASS | PostgreSQL | Linux SysAdmin'
 url: 'http://juanroa.me'
 baseurl: '/'
 google_analytics: 'UA-72523770-1'

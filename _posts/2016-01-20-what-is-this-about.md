@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "¿De qué se trata todo esto?"
-date:   2016-01-20 12:04:23
+date:   2016-01-18 09:04:09
 categories: about
-tags: [introduction, about, me]
+tags: [introduction, about me]
 ---
 Bienvenidos a mi blog personal y profesional. Aquí publicaré mi portafolio, experiencias
 y aportes de todo tipo: Desarrollo web, herramientas tecnológicas, SysAdmin tips, entre otros.
