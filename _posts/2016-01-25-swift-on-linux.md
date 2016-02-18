@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Swift 2 on Linux"
-date:   2016-01-18 15:04:23
+date:   2016-01-25 15:04:23
 categories: programming language
 tags: [swift lang, swift2, linux, swift linux, apple]
 ---
