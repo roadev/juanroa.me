@@ -16,7 +16,9 @@ author:
 
 # Build settings
 destination: _site
+gems: [jekyll-paginate]
 paginate: 10
+paginate_path: "page:num"
 permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
