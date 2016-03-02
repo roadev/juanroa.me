@@ -79,4 +79,4 @@
   }
   }( typeof global !== "undefined" ? global : this ));
 
-  loadCSS( "{{ "css/main.css" | prepend: site.baseurl }}" );
+  loadCSS( "{{ "../css/main.css" | prepend: site.baseurl }}" );
