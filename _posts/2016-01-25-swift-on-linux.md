@@ -6,7 +6,7 @@ categories: programming language
 tags: [swift lang, swift2, linux, swift linux, apple]
 ---
 
-Maybe many of you didn't know that Apple has open-sourced its Swift 2 code (compiler and core-libraries too) under the MIT license the past december (2015).
+Maybe many of you didn't notice that Apple has open-sourced its Swift 2 code (compiler and core-libraries too) under the MIT license the past december (2015).
 
 I'm going to show you how to install it on your Linux System (Archlinux, Ubuntu and Debian distros) and how to run some
 basic examples on the swift shell environment.
@@ -130,7 +130,7 @@ Possible error # 2:
 Fix it with:
 
 {% highlight swift %}
-wget -q -O - https://swift.org/keys/automatic-signing-key-1.asc | gpg --import -  
+wget -q -O - https://swift.org/keys/all-keys.asc | gpg --import -  
 {% endhighlight %}
 
 And that's all!
