@@ -2,7 +2,7 @@
 title: Juan Roa
 description: 'Web Developer from Cali, Colombia. HTML5 | CSS3 | JS | Ruby on Rails | ReactJS | Linux SysAdmin'
 url: 'http://juanroa.me'
-baseurl: ''
+baseurl: '/'
 google_analytics: 'UA-72523770-1'
 language: 'es'
 disqus_shortname: 'juanroa'
