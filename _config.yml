@@ -24,7 +24,7 @@ markdown: kramdown
 highlighter: rouge
 sass:
   sass_dir: _scss
-  style: :compressed
+  style: compressed
 
 compress_html:
   clippings: all
