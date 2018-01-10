@@ -2,9 +2,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {% if page.robots %}
+  <meta name="robots" content="{{ page.robots }}">
+  {% endif %}
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="{{ site.author.name }}">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -13,117 +16,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{ site.title }}">
-  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
+  {% if site.author.twitter_username %}
+  <meta name="twitter:creator" content="{{ site.author.twitter_username }}">
+  {% endif %}
+  <meta name="twitter:image" content="{{ site.baseurl }}/images/favicons/favicon-194x194.png" />
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="{{ site.title }}">
-  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:image" content="{{ site.baseurl }}/images/favicons/favicon-194x194.png" />
 
-  <link rel="apple-touch-icon" sizes="57x57" href="{{ "images/favicons/apple-touch-icon-57x57.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="60x60" href="{{ "images/favicons/apple-touch-icon-60x60.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="72x72" href="{{ "images/favicons/apple-touch-icon-72x72.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ "images/favicons/apple-touch-icon-76x76.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="114x114" href="{{ "images/favicons/apple-touch-icon-114x114.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="120x120" href="{{ "images/favicons/apple-touch-icon-120x120.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="144x144" href="{{ "images/favicons/apple-touch-icon-144x144.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ "images/favicons/apple-touch-icon-152x152.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "images/favicons/apple-touch-icon-180x180.png" | prepend: site.baseurl }}">
-  <link rel="icon" type="image/png" href="{{ "images/favicons/favicon-32x32.png" | prepend: site.baseurl }}" sizes="32x32">
-  <link rel="icon" type="image/png" href="{{ "images/favicons/favicon-194x194.png" | prepend: site.baseurl }}" sizes="194x194">
-  <link rel="icon" type="image/png" href="{{ "images/favicons/favicon-96x96.png" | prepend: site.baseurl }}" sizes="96x96">
-  <link rel="icon" type="image/png" href="{{ "images/favicons/android-chrome-192x192.png" | prepend: site.baseurl }}" sizes="192x192">
-  <link rel="icon" type="image/png" href="{{ "images/favicons/favicon-16x16.png" | prepend: site.baseurl }}" sizes="16x16">
-  <link rel="manifest" href="{{ "images/favicons/manifest.json" | prepend: site.baseurl }}">
-  <link rel="shortcut icon" href="{{ "images/favicons/favicon.ico" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="{{ site.baseurl }}/images/favicons/manifest.json">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/images/favicons/favicon.ico">
   <meta name="msapplication-TileColor" content="#ffc40d">
-  <meta name="msapplication-TileImage" content="{{ "images/favicons/mstile-144x144.png" | prepend: site.baseurl }}">
+  <meta name="msapplication-TileImage" content="{{ site.baseurl }}/images/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <script type="text/javascript" id="loadcss">
-    /*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
-    (function(w){
-    "use strict";
-    /* exported loadCSS */
-    var loadCSS = function( href, before, media ){
-      /* Arguments explained:
-      `href` [REQUIRED] is the URL for your CSS file.
-      `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
-       By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
-      `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'*/
-      var doc = w.document;
-      var ss = doc.createElement( "link" );
-      var newMedia = media || "all";
-      var ref;
-      if( before ){
-        ref = before;
-      }
-      else {
-        var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
-        ref = refs[ refs.length - 1];
-      }
-
-      var sheets = doc.styleSheets;
-      ss.rel = "stylesheet";
-      ss.href = href;
-      /* temporarily set media to something inapplicable to ensure it'll fetch without blocking render*/
-      ss.media = "only x";
-
-      /* wait until body is defined before injecting link. This ensures a non-blocking load in IE11.*/
-      function ready( cb ){
-        if( doc.body ){
-          return cb();
-        }
-        setTimeout(function(){
-          ready( cb );
-        });
-      }
-      /* Inject link
-      Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
-      Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/*/
-      ready( function(){
-        ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
-      });
-      /* A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.*/
-      var onloadcssdefined = function( cb ){
-        var resolvedHref = ss.href;
-        var i = sheets.length;
-        while( i-- ){
-          if( sheets[ i ].href === resolvedHref ){
-            return cb();
-          }
-        }
-        setTimeout(function() {
-          onloadcssdefined( cb );
-        });
-      };
-
-      /* once loaded, set link's media back to `all` so that the stylesheet applies once it loads*/
-      if( ss.addEventListener ){
-        ss.addEventListener( "load", function(){
-          this.media = newMedia;
-        });
-      }
-      ss.onloadcssdefined = onloadcssdefined;
-      onloadcssdefined(function() {
-        if( ss.media !== newMedia ){
-          ss.media = newMedia;
-        }
-      });
-      return ss;
-    };
-    /* commonjs */
-    if( typeof exports !== "undefined" ){
-      exports.loadCSS = loadCSS;
-    }
-    else {
-      w.loadCSS = loadCSS;
-    }
-    }( typeof global !== "undefined" ? global : this ));
-
-    loadCSS( "{{ "css/main.css" | prepend: site.baseurl }}" );
-  </script>
-  <noscript><link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}"></noscript>
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}feed.xml">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css?{{site.time | date: '%s%N'}}">
+  <link rel="canonical" href="{% if page.canonical %}{{ page.canonical }}{% else %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
 </head>

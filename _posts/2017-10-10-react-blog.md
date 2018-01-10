@@ -246,3 +246,9 @@ module.exports = {
 {% endhighlight %}
 
 Now, we're able to see our first React app running and displaying `Hello React` with webpack + hot reloading. We are also able to see our changes in the browser without reloading it manually.
+
+### Routing with React Router
+
+{% highlight html %}
+yarn add react-router-dom
+{% endhighlight %}

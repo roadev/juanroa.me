@@ -2,7 +2,7 @@
 title: Juan Roa
 description: 'Web Developer from Cali, Colombia. HTML5 | CSS3 | JS | Ruby on Rails | ReactJS | Linux SysAdmin'
 url: 'http://juanroa.me'
-baseurl: '/'
+baseurl: ''
 google_analytics: 'UA-72523770-1'
 language: 'es'
 disqus_shortname: 'juanroa'
@@ -14,9 +14,17 @@ author:
   github_username:  roadev
   linkedin_username:  roadev
 
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post'
+
 # Build settings
 destination: _site
-plugins: [jekyll-paginate]
+plugins: ['jekyll-paginate']
 paginate: 10
 paginate_path: "page:num"
 permalink: /:year/:title/
@@ -24,7 +32,7 @@ markdown: kramdown
 highlighter: rouge
 sass:
   sass_dir: _scss
-  style: :compressed
+  style: compressed
 
 compress_html:
   clippings: all
