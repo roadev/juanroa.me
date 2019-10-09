@@ -1,3 +1,9 @@
+
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab:300,400)';
+/* http://meyerweb.com/eric/tools/css/reset/
+	 v2.0 | 20110126
+	 License: none (public domain)
+*/
 @import "variables";
 @import 'raleway';
 @import "animate";
@@ -393,6 +399,7 @@ video {
 	src: $url_1 format("embedded-opentype"), $url_2 format("woff"), $url_3 format("truetype"), $url_4 format("svg");
 	font-weight: normal;
 	font-style: normal;
+	font-display: auto;
 }
 .icon:before {
 	font-family: "foundation-icons";
