@@ -1,7 +1,7 @@
 # Site settings
 title: Juan Roa
-description: 'Web Developer from Cali, Colombia. HTML5 | CSS3 | JS | Ruby on Rails | ReactJS | Linux SysAdmin'
-url: 'http://juanroa.me'
+description: 'Full stack engineer'
+url: 'https://juanroa.me'
 baseurl: ''
 google_analytics: 'UA-72523770-1'
 language: 'es'
