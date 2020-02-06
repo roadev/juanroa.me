@@ -5,6 +5,7 @@ date:   2017-10-09 10:00:00
 categories: react
 tags: [react, reactjs, webpack, jsx, javascript]
 ---
+**This is an old and outdated tutorial for learning React**
 
 ### Initialize npm project and install dependencies
 
