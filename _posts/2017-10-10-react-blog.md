@@ -6,7 +6,7 @@ categories: react
 tags: [react, reactjs, webpack, jsx, javascript]
 ---
 
-## Initialize npm project and install dependencies
+### Initialize npm project and install dependencies
 
 ### Install nvm
 
